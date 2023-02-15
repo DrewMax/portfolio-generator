@@ -15,12 +15,28 @@ return inquirer.prompt([
     {
         type: "input",
         name: "name",
-        message: "What is your name?"
+        message: "What is your name? (Required)",
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log("Please enter your name!");
+                return false;
+            }
+        }
     },
     {
         type: "input",
         name: "github",
-        message: "Enter is your Github Username?"
+        message: "Enter is your Github Username?",
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log("Please enter your Github Username!");
+                return false;
+            }
+        }
     },
     {
         type: "input",
@@ -50,7 +66,15 @@ return inquirer.prompt([
           {
             type: 'input',
             name: 'description',
-            message: 'Provide a description of the project (Required)'
+            message: 'Provide a description of the project (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter a Product description!");
+                    return false;
+                }
+            }
           },
           {
             type: 'checkbox',
@@ -61,7 +85,15 @@ return inquirer.prompt([
           {
             type: 'input',
             name: 'link',
-            message: 'Enter the GitHub link to your project. (Required)'
+            message: 'Enter the GitHub link to your project. (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter your Github link!");
+                    return false;
+                }
+            }
           },
           {
             type: 'confirm',

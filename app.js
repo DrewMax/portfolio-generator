@@ -37,12 +37,19 @@ return inquirer.prompt([
                 return false;
             }
         }
-    },
-    {
+        },
+        {
+        type: "confirm",
+        name: "confirmAbout",
+        message: "Would you like to enter some more infromation about yourself for an `About` section?",
+        default: true
+      },
+      {
         type: "input",
         name: "about",
-        message: "Provide some infromation about yourself?"
-    },
+        message: "Provide some information about yourself",
+        when: ({ confirmAbout }) => confirmAbout
+      }
     ]);
 };
 
@@ -106,7 +113,8 @@ return inquirer.prompt([
             name: 'confirmAddProject',
             message: 'Would you like to enter another project?',
             default: false
-          }
+          },
+          
         ]);
       };
 

@@ -18,4 +18,8 @@ const generatePage = (name, github) => {
     `;
     }
 
-    module.exports = generatePage;
+    module.exports = generatePage => {
+        console.log(generatePage)
+    }
+
+    

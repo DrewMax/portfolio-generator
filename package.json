@@ -1,0 +1,22 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "inquirer for this project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrewMax/portfolio-generator.git"
+  },
+  "author": "MIT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DrewMax/portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/DrewMax/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  }
+}

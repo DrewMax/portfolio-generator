@@ -1,6 +1,6 @@
 # Portfolio-Generator
 
-##Description
+## Description
  A Node.js project designed to Generate a portfolio with a series of questions ansered in the command line.
  
 ## Languages
